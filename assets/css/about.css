@@ -1,12 +1,12 @@
-/* About Page Layout */
 .about-main {
     flex: 1 0 auto;
-    min-height: calc(100vh - 60px - 60px); /* header + footer approx */
+    min-height: calc(100vh - 60px - 60px);
     display: flex;
     align-items: center;
     justify-content: center;
     background: #a1a89d;
 }
+
 .about-content {
     display: flex;
     gap: 3rem;
@@ -17,12 +17,14 @@
     padding: 2.5rem 2rem;
     box-shadow: 0 2px 12px rgba(60,60,60,0.04);
 }
+
 .about-left {
     flex: 0.9;
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
+
 .about-photo-placeholder {
     width: 140px;
     height: 140px;
@@ -37,33 +39,39 @@
     margin-top: 1.5rem;
     box-shadow: 0 2px 8px rgba(60,60,60,0.08);
 }
+
 .about-right {
     flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .about-heading {
     font-family: 'Fira Mono', monospace;
     font-size: 2rem;
     color: #39263b;
     margin-bottom: 1rem;
 }
+
 .about-bio {
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: 1.08rem;
     color: #222;
     margin-bottom: 1.5rem;
 }
+
 .about-skills {
     margin-top: 1.2rem;
 }
+
 .skills-heading {
     font-family: 'Fira Mono', monospace;
     font-size: 1.1rem;
     color: #43465a;
     margin-bottom: 0.5rem;
 }
+
 .skills-list {
     display: flex;
     flex-wrap: wrap;
@@ -71,6 +79,7 @@
     list-style: none;
     padding: 0;
 }
+
 .skills-list li {
     background: #e6e7d2;
     color: #39263b;
@@ -80,17 +89,20 @@
     border-radius: 6px;
     box-shadow: 0 1px 4px rgba(60,60,60,0.04);
 }
+
 @media (max-width: 900px) {
     .about-content {
         flex-direction: column;
         gap: 2rem;
         padding: 1.5rem 1rem;
     }
+
     .about-left, .about-right {
         min-width: 0;
         width: 100%;
         align-items: center;
     }
+    
     .about-photo-placeholder {
         margin: 0 auto 1.5rem auto;
     }

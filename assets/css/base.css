@@ -7,9 +7,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html, body {
     height: 100%;
 }
+
 body {
     font-family: 'Montserrat', Arial, sans-serif;
     background: #bfc2bb url('../img/bg-stars.png'); /* Img background placeholder */
@@ -18,11 +20,13 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 header {
     background: #43465a;
     color: #fff;
     padding: 0.5rem 0;
 }
+
 .navbar-wrapper {
     display: flex;
     align-items: center;
@@ -31,16 +35,19 @@ header {
     margin: 0 auto;
     padding: 0 1rem;
 }
+
 .site-title {
     font-weight: bold;
     font-size: 1.3rem;
     letter-spacing: 1px;
 }
+
 nav ul {
     list-style: none;
     display: flex;
     gap: 2rem;
 }
+
 nav a {
     color: #fff;
     text-decoration: none;
@@ -49,10 +56,12 @@ nav a {
     border-radius: 4px;
     transition: background 0.2s;
 }
+
 nav a.active, nav a:hover {
     background: #e07ea3;
     color: #fff;
 }
+
 footer {
     background: #43465a;
     color: #fff;
@@ -64,9 +73,11 @@ footer {
     margin-top: 2rem;
     flex-shrink: 0;
 }
+
 .footer-content {
     font-size: 0.95rem;
 }
+
 .btn {
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: 1rem;
@@ -80,19 +91,23 @@ footer {
     transition: background 0.2s, color 0.2s, border 0.2s;
     font-weight: 600;
 }
+
 .btn-outline {
     background: #e6e7d2;
     border-color: #43465a;
 }
+
 .btn-outline:hover {
     background: #43465a;
     color: #fff;
 }
+
 .btn-accent {
     background: #e07ea3;
     color: #fff;
     border-color: #e07ea3;
 }
+
 .btn-accent:hover {
     background: #c05c8e;
     border-color: #c05c8e;
@@ -104,11 +119,13 @@ footer {
         flex-direction: column;
         align-items: flex-start;
     }
+
     nav ul {
         flex-direction: column;
         gap: 0.5rem;
         width: 100%;
     }
+
     .site-title {
         margin-bottom: 0.5rem;
     }
