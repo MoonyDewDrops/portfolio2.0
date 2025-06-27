@@ -1,0 +1,76 @@
+/* Contact Page Layout */
+.contact-main {
+    flex: 1 0 auto;
+    min-height: calc(100vh - 60px - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a1a89d;
+}
+.contact-content {
+    width: 100%;
+    max-width: 500px;
+    padding: 2.5rem 2rem;
+    background: rgba(255,255,255,0.02);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(60,60,60,0.04);
+}
+.contact-heading {
+    font-family: 'Fira Mono', monospace;
+    font-size: 2rem;
+    color: #39263b;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+label {
+    font-family: 'Fira Mono', monospace;
+    font-size: 1rem;
+    color: #43465a;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1rem;
+    padding: 0.6rem 0.8rem;
+    border: 1.5px solid #bfc2bb;
+    border-radius: 6px;
+    background: #fff;
+    color: #222;
+    transition: border 0.2s;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #e07ea3;
+    outline: none;
+}
+.contact-success {
+    background: #e6e7d2;
+    color: #43465a;
+    border: 1.5px solid #e07ea3;
+    border-radius: 8px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+@media (max-width: 600px) {
+    .contact-content {
+        padding: 1.2rem 0.5rem;
+    }
+    .contact-heading {
+        font-size: 1.3rem;
+    }
+} 

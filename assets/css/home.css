@@ -1,0 +1,98 @@
+/* Home Page Layout */
+.home-main {
+    flex: 1 0 auto;
+    min-height: calc(100vh - 60px - 60px); /* header + footer approx */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a1a89d;
+}
+.home-content {
+    display: flex;
+    gap: 3rem;
+    max-width: 900px;
+    width: 100%;
+    background: rgba(255,255,255,0.02);
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 2px 12px rgba(60,60,60,0.04);
+}
+.home-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 220px;
+}
+.home-role {
+    color: #e07ea3;
+    font-family: 'Fira Mono', monospace;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+.home-name {
+    font-family: 'Fira Mono', monospace;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 1.2rem;
+}
+.home-buttons {
+    display: flex;
+    gap: 1rem;
+}
+.btn {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    border: 2px solid #43465a;
+    background: none;
+    color: #43465a;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    font-weight: 600;
+}
+.btn-outline {
+    background: #e6e7d2;
+    border-color: #43465a;
+}
+.btn-outline:hover {
+    background: #43465a;
+    color: #fff;
+}
+.btn-accent {
+    background: #e07ea3;
+    color: #fff;
+    border-color: #e07ea3;
+}
+.btn-accent:hover {
+    background: #c05c8e;
+    border-color: #c05c8e;
+}
+.home-right {
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.08rem;
+    color: #222;
+    background: #bfc2bb;
+    border-radius: 8px;
+    padding: 1.5rem 1.2rem;
+    box-shadow: 0 1px 6px rgba(60,60,60,0.04);
+    min-width: 220px;
+}
+@media (max-width: 900px) {
+    .home-content {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem 1rem;
+    }
+    .home-left, .home-right {
+        min-width: 0;
+        width: 100%;
+    }
+} 
