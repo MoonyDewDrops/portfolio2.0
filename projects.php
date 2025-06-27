@@ -14,7 +14,7 @@ include_once 'data.php';
                 <div class="project-card">
                     <div class="project-image">
                         <?php if (!empty($project['image'])): ?>
-                            <img src="<?php echo $project['image']; ?>" alt="<?php echo htmlspecialchars($project['name']); ?>">
+                            <img src="<?=$project['image']; ?>" alt="<?php echo htmlspecialchars($project['name']); ?>">
                         <?php else: ?>
                             <div class="img-placeholder">No Image</div>
                         <?php endif; ?>
