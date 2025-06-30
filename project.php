@@ -9,6 +9,7 @@ include_once 'data.php';
 <?php
 $projectId = isset($_GET['id']) ? $_GET['id'] : null;
 $project = null;
+// this is for loading in the project n everything, breaking so it doesnt continue looping after the specific product is already found
 foreach ($projects as $p) {
     if ($p['id'] === $projectId) {
         $project = $p;
