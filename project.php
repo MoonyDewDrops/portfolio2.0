@@ -21,7 +21,7 @@ foreach ($projects as $p) {
 <main class="project-main">
     <section class="project-detail-content">
         <?php if ($project): ?>
-            <a href="projects.php" class="btn btn-outline project-back">&larr; Terug naar projecten</a>
+            <a href="projecten" class="btn btn-outline project-back">&larr; Terug naar projecten</a>
             <div class="project-detail-card">
                 <div class="project-detail-image">
                     <?php if (!empty($project['image'])): ?>
@@ -39,7 +39,7 @@ foreach ($projects as $p) {
         <?php else: ?>
             <div class="project-not-found">
                 <h2>Project niet gevonden</h2>
-                <a href="projects.php" class="btn btn-outline">&larr; Terug naar projecten</a>
+                <a href="projecten" class="btn btn-outline">&larr; Terug naar projecten</a>
             </div>
         <?php endif; ?>
     </section>

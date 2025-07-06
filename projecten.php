@@ -41,7 +41,7 @@ include_once 'data.php';
                             }
                             ?>
                         </p>
-                        <a href="project.php?id=<?php echo urlencode($project['id']); ?>" class="btn btn-accent">Bekijk project</a>
+                        <a href="project?id=<?php echo urlencode($project['id']); ?>" class="btn btn-accent">Bekijk project</a>
                     </div>
                 </div>
             <?php endforeach; ?>

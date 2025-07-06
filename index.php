@@ -11,8 +11,8 @@ include_once 'header.php';
             <div class="home-role">Web Developer</div>
             <h1 class="home-name">Julia Brouwer</h1>
             <div class="home-buttons">
-                <a href="about.php" class="btn btn-outline">Over mij</a>
-                <a href="projects.php" class="btn btn-accent">Mijn werk</a>
+                <a href="over" class="btn btn-outline">Over mij</a>
+                <a href="projecten" class="btn btn-accent">Mijn werk</a>
             </div>
         </div>
         <div class="home-right">

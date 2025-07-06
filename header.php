@@ -11,13 +11,13 @@
 <body>
     <header>
         <div class="navbar-wrapper">
-            <div class="site-title">Julia Brouwer</div>
+            <div class="site-title"><a href="/">Julia Brouwer</a></div>
             <nav>
                 <ul>
-                    <li><a href="index.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?>">Home</a></li>
-                    <li><a href="about.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'about.php' ? 'active' : ''; ?>">About me</a></li>
-                    <li><a href="projects.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'projects.php' ? 'active' : ''; ?>">Projects</a></li>
-                    <li><a href="contact.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'active' : ''; ?>">Contact</a></li>
+                    <li><a href="/" class="<?php echo basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : ''; ?>">Home</a></li>
+                    <li><a href="over" class="<?php echo basename($_SERVER['PHP_SELF']) == 'over.php' ? 'active' : ''; ?>">Over mij</a></li>
+                    <li><a href="projecten" class="<?php echo basename($_SERVER['PHP_SELF']) == 'projecten.php' ? 'active' : ''; ?>">Projecten</a></li>
+                    <li><a href="contact" class="<?php echo basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'active' : ''; ?>">Contact</a></li>
                 </ul>
             </nav>
         </div>

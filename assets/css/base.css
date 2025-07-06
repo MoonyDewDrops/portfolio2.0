@@ -46,6 +46,13 @@ header {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+.site-title a {
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    display: inline-block;
+}
 nav ul {
     list-style: none;
     display: flex;
