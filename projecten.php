@@ -41,6 +41,10 @@ include_once 'data.php';
                             }
                             ?>
                         </p>
+                        <div class="project-tech-list">
+                            <span class="project-tech-label">Technieken:</span>
+                            <?php echo htmlspecialchars(implode(', ', $project['tech'])); ?>
+                        </div>
                         <a href="project?id=<?php echo urlencode($project['id']); ?>" class="btn btn-accent">Bekijk project</a>
                     </div>
                 </div>

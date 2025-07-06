@@ -76,6 +76,18 @@
     margin-bottom: 1.2rem;
     flex: 1;
 }
+.project-tech-list {
+    margin: 0.5rem 0 0.7rem 0;
+    font-size: 0.98rem;
+    color: #7a6c7a;
+    font-family: 'Fira Mono', monospace;
+    letter-spacing: 0.2px;
+}
+.project-tech-label {
+    font-weight: 700;
+    color: #e07ea3;
+    margin-right: 0.3em;
+}
 @media (max-width: 900px) {
     .projects-content {
         padding: 1.5rem 0.5rem;

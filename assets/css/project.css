@@ -75,6 +75,33 @@
     max-width: 400px;
     margin: 0 auto;
 }
+.project-tech-badges {
+    margin-top: 1.1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.7rem;
+}
+.project-tech-label {
+    font-family: 'Fira Mono', monospace;
+    font-size: 1rem;
+    color: #e07ea3;
+    font-weight: 700;
+    margin-right: 0.5em;
+}
+.tech-badge {
+    background: #e6e7d2;
+    color: #e07ea3;
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.98rem;
+    padding: 0.28em 0.85em;
+    border-radius: 999px;
+    box-shadow: 0 1px 4px rgba(67,70,90,0.07);
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    display: inline-block;
+    border: 1.5px solid #bfc2bb;
+}
 @media (max-width: 700px) {
     .project-detail-card {
         flex-direction: column;

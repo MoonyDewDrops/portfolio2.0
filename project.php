@@ -34,6 +34,12 @@ foreach ($projects as $p) {
                     <h1 class="project-detail-title"><?php echo htmlspecialchars($project['name']); ?></h1>
                     <div class="project-detail-date">Datum: <?php echo htmlspecialchars($project['date']); ?></div>
                     <p class="project-detail-desc"><?php echo htmlspecialchars($project['description']); ?></p>
+                    <div class="project-tech-badges">
+                        <span class="project-tech-label">Technieken:</span>
+                        <?php foreach ($project['tech'] as $tech): ?>
+                            <span class="tech-badge"><?php echo htmlspecialchars($tech); ?></span>
+                        <?php endforeach; ?>
+                    </div>
                 </div>
             </div>
         <?php else: ?>
