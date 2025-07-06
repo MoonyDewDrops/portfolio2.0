@@ -1,9 +1,12 @@
 RewriteEngine On
 
-# If the requimage.png
+# If the requested file or directory exists, serve it directly
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
-# Rewrite /about to /about.php, /projects to /projects.php, etc.
+# Rewrite root URL to home.php
+RewriteRule ^$ home.php [L]
+
+# Rewrite /over to over.php, /projecten to projecten.php, etc.
 RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L] 
