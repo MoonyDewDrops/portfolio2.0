@@ -8,13 +8,14 @@ include_once 'header.php';
 <main class="about-main">
     <section class="about-content">
         <div class="about-left">
-            <div class="about-photo-placeholder">Foto hier</div>
+            <!-- actual foto of me myself and i -->
+            <img src="assets/img/myFoto.jpg" alt="Julia Brouwer" class="about-photo-placeholder">
         </div>
         <div class="about-right">
             <h1 class="about-heading">Over mij</h1>
             <p class="about-bio">
-                Hoi! Ik ben Julia Brouwer, een enthousiaste web developer in opleiding aan het Grafisch Lyceum Utrecht. Ik hou van het maken van mooie, functionele websites en het leren van nieuwe technologieën. <br><br>
-            </p>
+                Hoi! Ik ben Julia Brouwer, een enthousiaste web developer in opleiding aan het Grafisch Lyceum Utrecht. Ik hou erg veel van backend, en mijn favoriete codeer talen zijn PHP en Python. <br> <br>
+                Over mij persoonlijk; In mijn vrije tijd lees ik veel, en game ik graag. Onder andere vindt ik het leuk om excel sheets te maken, plannen, en strategie spellen te spelen.</p>
             <div class="about-skills">
                 <h2 class="skills-heading">Skills & Technologieën</h2>
                 <ul class="skills-list">
