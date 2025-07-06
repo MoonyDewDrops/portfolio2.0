@@ -22,49 +22,37 @@
     margin-bottom: 2rem;
     text-align: left;
 }
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-}
-label {
-    font-family: 'Fira Mono', monospace;
-    font-size: 1rem;
-    color: #43465a;
-}
-input[type="text"],
-input[type="email"],
-textarea {
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 1rem;
-    padding: 0.6rem 0.8rem;
-    border: 1.5px solid #bfc2bb;
-    border-radius: 6px;
-    background: #fff;
-    color: #222;
-    transition: border 0.2s;
-}
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    border-color: #e07ea3;
-    outline: none;
-}
-.contact-success {
+.contact-info-box {
     background: #e6e7d2;
-    color: #43465a;
-    border: 1.5px solid #e07ea3;
     border-radius: 8px;
-    padding: 1.5rem 1rem;
-    text-align: center;
+    box-shadow: 0 1px 6px rgba(60,60,60,0.04);
+    padding: 1.2rem 1rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.contact-label {
+    font-family: 'Fira Mono', monospace;
+    font-size: 1.05rem;
+    color: #43465a;
+    margin-bottom: 0.2rem;
+}
+.contact-value {
     font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
+    font-size: 1.08rem;
+    color: #222;
+    word-break: break-all;
+}
+.contact-value a {
+    color: #e07ea3;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+.contact-value a:hover {
+    color: #c05c8e;
+    text-decoration: underline;
 }
 @media (max-width: 600px) {
     .contact-content {

@@ -15,10 +15,17 @@ $projects = [
         'date' => '2025-09-23',
     ],
     [
-        'id' => 'project1',
-        'name' => 'Toothrush',
+        'id' => 'project3',
+        'name' => 'Tooth Rush',
         'description' => 'Ik moest voor dit project een game maken met een soort winterse sfeer, en ik heb hiervoor dit spel gemaakt. Inspiratie opgedaan en Subway Surfers.',
         'image' => 'assets/img/toothrush.png',
         'date' => '2025-12-14',
     ],
+    [
+        'id' => 'project4',
+        'name' => 'Happy Herbivore',
+        'description' => 'In vier weken, samen met mijn teamgenoot Pebbles, hebben wij voor onze klant Harry een werkend kioskprototype gemaakt voor zijn fictief bedrijf Happy Herbivore. Wij hebben hiervoor PHP, Javascript, HTML5 en CSS gebruikt.',
+        'image' => 'assets/img/happyHerbivore.jpg',
+        'date' => '2025-3-14'
+        ]
 ]; 
