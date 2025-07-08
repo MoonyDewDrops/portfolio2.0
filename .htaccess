@@ -7,3 +7,6 @@ RewriteRule ^ - [L]
 RewriteRule ^$ home.php [L]
 
 RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L] 
+
+RUN a2enmod rewrite
+RUN sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
