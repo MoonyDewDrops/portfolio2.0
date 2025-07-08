@@ -1,10 +1,14 @@
 FROM php:8.2-apache
 
-# Kopieer alle bestanden naar de Apache root
-COPY . /var/www/html/
-
-# Schakel mod_rewrite in (vereist voor .htaccess)
+# Schakel mod_rewrite in
 RUN a2enmod rewrite
 
-# Zet Apache-config om AllowOverride toe te staan (voor .htaccess)
+# Laat .htaccess werken (AllowOverride All)
 RUN sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
+
+# (optioneel) stel expliciete DirectoryIndex in
+RUN echo "DirectoryIndex index.php" > /etc/apache2/conf-available/directoryindex.conf \
+  && a2enconf directoryindex
+
+# Kopieer alle bestanden naar de server
+COPY . /var/www/html/
