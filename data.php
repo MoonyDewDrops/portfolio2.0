@@ -4,6 +4,7 @@ $projects = [
         'id' => 'project1',
         'name' => 'Annex Bios Leidsche Rijn',
         'description' => 'Wij hebben een bioscoop website gemaakt voor een vestiging in Leidsche Rijn. Hierbij moesten wij zorgen dat de website live stond, films te zien waren en stoelen bestelt/gereserveerd konden worden',
+        'image' => 'assets/img/Annex_Bios.jpeg',
         'video' => '',
         'date' => '2024-09-04',
         'link' => 'https://annexbiosleidscherijn.gluwebsite.nl/jnp/annex-bios/',
