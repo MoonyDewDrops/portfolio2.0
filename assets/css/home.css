@@ -96,3 +96,28 @@
         width: 100%;
     }
 } 
+@media (max-width: 700px) {
+    .home-name {
+        font-size: 1.8rem;
+    }
+    .home-role {
+        font-size: 1rem;
+    }
+    .home-buttons {
+        flex-wrap: wrap;
+        gap: 0.7rem;
+    }
+    .home-right {
+        font-size: 1rem;
+        padding: 1.1rem 1rem;
+    }
+}
+@media (max-width: 420px) {
+    .home-name {
+        font-size: 1.6rem;
+    }
+    .home-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+}

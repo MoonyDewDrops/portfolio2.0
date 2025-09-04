@@ -36,6 +36,27 @@ header {
     margin: 0 auto;
     padding: 0 1rem;
 }
+.menu-toggle {
+    display: none;
+    align-items: right;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0.4rem;
+    border-radius: 6px;
+}
+.menu-toggle:focus-visible {
+    outline: 2px solid #e07ea3;
+    outline-offset: 2px;
+}
+.menu-bar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    margin: 5px 0;
+    transition: transform 0.2s, opacity 0.2s;
+}
 .site-title {
     font-weight: bold;
     font-size: 1.5rem;
@@ -156,13 +177,33 @@ footer {
         flex-direction: column;
         align-items: flex-start;
     }
+    .menu-toggle {
+        display: inline-block;
+    }
+    nav {
+        width: 100%;
+        display: none;
+    }
+    nav.is-open {
+        display: block;
+    }
     nav ul {
         flex-direction: column;
         gap: 0.5rem;
         width: 100%;
+        padding: 0.6rem 0;
     }
     .site-title {
         margin-bottom: 0.5rem;
+    }
+}
+@media (max-width: 420px) {
+    nav a {
+        font-size: 0.98rem;
+        padding: 0.35rem 0.8rem;
+    }
+    .navbar-wrapper {
+        padding: 0 0.6rem;
     }
 }
 
