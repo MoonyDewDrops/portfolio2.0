@@ -16,7 +16,7 @@ include_once 'data.php';
                     <div class="project-image">
                         <!-- if its not empty, load that shi -->
                         <?php if (!empty($project['image'])): ?>
-                            <img src="<?php echo $project['image']; ?>" alt="<?php echo htmlspecialchars($project['name']); ?>">
+                            <img class="js-lightbox-trigger" src="<?php echo $project['image']; ?>" alt="<?php echo htmlspecialchars($project['name']); ?>">
                             <!-- otherwise no image for u queen -->
                         <?php else: ?>
                             <div class="img-placeholder">No Image</div>
@@ -56,3 +56,45 @@ include_once 'data.php';
 <?php
 include_once 'footer.php';
 ?>
+
+<!-- Lightbox markup -->
+<div class="lightbox-overlay" id="lightbox-overlay" tabindex="-1" aria-hidden="true">
+    <img class="lightbox-image" id="lightbox-image" src="" alt="Project afbeelding">
+    <!-- overlay acts as backdrop; click anywhere to close -->
+    <button type="button" id="lightbox-close" aria-label="Sluiten" style="position:absolute;top:16px;right:16px;background:transparent;border:none;color:#fff;font-size:28px;cursor:pointer;">&times;</button>
+    </div>
+
+<script>
+(function(){
+    var overlay = document.getElementById('lightbox-overlay');
+    var imageEl = document.getElementById('lightbox-image');
+    var closeBtn = document.getElementById('lightbox-close');
+    function openLightbox(src, alt){
+        imageEl.src = src;
+        imageEl.alt = alt || '';
+        overlay.classList.add('is-visible');
+        overlay.setAttribute('aria-hidden','false');
+        overlay.focus();
+    }
+    function closeLightbox(){
+        overlay.classList.remove('is-visible');
+        overlay.setAttribute('aria-hidden','true');
+        imageEl.src = '';
+        imageEl.alt = '';
+    }
+    document.addEventListener('click', function(e){
+        var t = e.target;
+        if (t && t.classList && t.classList.contains('js-lightbox-trigger')){
+            e.preventDefault();
+            openLightbox(t.getAttribute('src'), t.getAttribute('alt'));
+        }
+        if (t === overlay){
+            closeLightbox();
+        }
+    });
+    closeBtn.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeLightbox();
+    });
+})();
+</script>

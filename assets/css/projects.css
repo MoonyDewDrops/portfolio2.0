@@ -88,6 +88,27 @@
     color: #e07ea3;
     margin-right: 0.3em;
 }
+.lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.lightbox-overlay.is-visible {
+    display: flex;
+}
+.lightbox-image {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+.lightbox-overlay:focus {
+    outline: none;
+}
 @media (max-width: 900px) {
     .projects-content {
         padding: 1.5rem 0.5rem;
