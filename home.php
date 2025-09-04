@@ -16,8 +16,8 @@ include_once 'header.php';
             </div>
         </div>
         <div class="home-right">
-            <p>Mijn naam is Julia Brouwer en ik ben tweedejaars student aan het Grafisch Lyceum Utrecht. <br> Ik volg de voltijdopleiding Web Development.<br><br>
-            Klik gerust door om een indruk te krijgen van mij en het werk dat ik maak!</p>
+            <p>Mijn naam is Julia Brouwer , en ik ben een 2e jaars student op het Grafisch Lyceum Utrecht. <br> Ik volg de voltijdopleiding Web Development.<br><br>
+            Klik gerust door mijn portfolio om een indruk te krijgen van mij en het werk dat ik maak!</p>
         </div>
     </section>
 </main>

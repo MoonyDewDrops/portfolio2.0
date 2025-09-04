@@ -3,9 +3,7 @@ $projects = [
     [
         'id' => 'project1',
         'name' => 'Annex Bios Leidsche Rijn',
-        'description' => 'Wij hebben een bioscoopwebsite gemaakt voor de vestiging in Leidsche Rijn. We zorgden dat de website live stond, films konden worden getoond en stoelen konden worden besteld/gereserveerd.',
-        'image' => 'assets/img/Annex_Bios.jpeg',
-        'image2' => '',
+        'description' => 'Wij hebben een bioscoop website gemaakt voor een vestiging in Leidsche Rijn. Hierbij moesten wij zorgen dat de website live stond, films te zien waren en stoelen bestelt/gereserveerd konden worden',
         'video' => '',
         'date' => '2024-09-04',
         'link' => 'https://annexbiosleidscherijn.gluwebsite.nl/jnp/annex-bios/',
@@ -36,7 +34,7 @@ $projects = [
     [
         'id' => 'project4',
         'name' => 'Happy Herbivore',
-        'description' => 'In vier weken heb ik samen met mijn teamgenoot Pebbles voor onze klant Harry een werkend kioskprototype gemaakt voor zijn fictieve bedrijf Happy Herbivore. Hiervoor hebben we PHP, JavaScript, HTML5 en CSS gebruikt.',
+        'description' => 'In vier weken heb ik samen met mijn teamgenoot Pebbles voor onze klant Harry een werkend kioskprototype gemaakt voor zijn fictieve bedrijf Happy Herbivore.',
         'image' => 'assets/img/happyHerbivore.jpg',
         'image2' => 'assets/img/happyHerbivore2.png',
         'video' => 'assets/video/happyHerbivoreVid.mkv',
