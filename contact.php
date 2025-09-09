@@ -11,7 +11,7 @@ include_once 'header.php';
         <!-- changed from a form to these thingies. Email plus LinkedIn n GitHub -->
         <div class="contact-info-box">
             <div class="contact-label">E-mail</div>
-            <div class="contact-value"><a href="mailto:230062@student.glu.nl">230062@student.glu.nl</a></div>
+            <div class="contact-value"><a href="mailto:julia.brouwervanoudshoorn@gmail.com">julia.brouwervanoudshoorn@gmail.com</a></div>
         </div>
         <div class="contact-info-box">
             <div class="contact-label">Socials</div>
